@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.body{
+    font-size: 16px;
+}
+
+.container{
+    border: 2px solid black;
+    margin:12px;
+    padding:8px;
+}
+
+.static{
+    position: static;
+    top:30px;
+}
+
+.relative{
+    position: relative;
+    left:60px;
+}
+.absolute{
+    position: absolute;
+    top: 30px;
+    left:50%;
+}
+
+.wrapper{
+    position: relative;
+    height: 200px;
+    border: 2px solid green;
+}
+
+.wrapper .child{
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixed{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: blue;
+    width:100%;
+}
+
+.sticky{
+    background-color: green;
+    position: sticky;
+    top:30px;
+
+
+}
+.sticky-wrapper{
+    overflow-y: auto;
+    margin-top: 20px;
+    height: 120px;
+}
+.sticky-wrapper p {
+    background-color: azure;
+    margin-top: 60px;
+}
+
+.sticky-wrapper p:nth-child(2) {
+    position: sticky;
+    top:0;
+    background-color: antiquewhite;
+
+}
+
+/* css Display */
+.inline{
+    display: inline;
+    border: 1px solid black;
+
+}
+.block{
+    display: block;
+    padding: 4px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    border: 1px solid black;
+}
+
+.none{
+    display: none;
+    margin-top: 12px;
+    border: 1px solid black;
+}
+
+/* css units */
+.parent{
+    font-size: 12px;
+
+}
+.parent .px{
+    font-size: 8px;
+}
+.parent .em{
+    font-size: 2em;
+
+}
